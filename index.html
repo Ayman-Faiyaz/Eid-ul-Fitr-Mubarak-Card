@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eid Mubarak!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Happy Eid Mubarak!</h1>
+            <h2>- From Faiyaz -</h2>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            function startConfettiLoop() {
+                
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+
+                
+                confetti({
+                    particleCount: 250, 
+                    spread: 360, 
+                    origin: { x: Math.random(), y: Math.random() } // Set the launch position
+                });
+
+                setTimeout(startConfettiLoop, 1000);
+            }
+
+            startConfettiLoop();
+        };
+    </script>
+    
+</body>
+</html>

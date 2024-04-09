@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url('3709.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.content h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: -3em;
+    z-index: 1;
+}
+
+.content h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 28em;
+    z-index: 1;
+}
+
+.mosque {
+    width: 150px;
+    height: 150px;
+}
+
+.one {
+    margin-top: 20em;
+}
